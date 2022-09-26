@@ -1,0 +1,98 @@
+body {
+  font-family: 'Amatic SC', cursive;
+  background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+}
+
+table {
+	margin: 0 auto;
+	border: 2px solid #000;
+}
+
+th {
+  border: 2px solid #000;
+}
+
+td {
+  border: 2px solid #000;
+}
+
+.tablecaption{
+	color: #000;
+	font-weight: bold;
+	font-size: 30px;
+  border: 2px solid #000;
+}
+.period {
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+  border: 2px solid #000;
+}
+.element{
+	position: relative;
+	width: 90px;
+	height: 80px;
+	padding: 3px;
+	text-align: left;
+	color: #000;
+	transition-duration: 0.2s;
+  font-weight: bold;
+}
+
+.element:hover .symbol{
+	font-size: 30px;
+	transition-duration: 0.4s;
+}
+
+.nonmetals {
+	background-color: #8ced8c;
+}
+.number {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+.symbol {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+.name {
+	display: block;
+	font-size: 14px;
+}
+
+.noblegases {
+	background-color: #e65de6;
+}
+
+.alkaline  {
+	background-color: #e4c756;
+}
+.alkaline-earth {
+	background-color: #f0f023;
+}
+
+.halogens {
+  background-color: #fc9700;
+}
+
+.semimet {
+	background-color: #34dfb7;
+}
+
+.posttransmet {
+	background-color: #3fcbee;
+}
+
+.transmet {
+	background-color: #f57a59;
+}
+
+.lantan {
+	background-color: #084197;
+}
+
+.aktin {
+	background-color: #f35b8e;
+}
