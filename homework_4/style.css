@@ -32,7 +32,13 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: inherit;
+  transition: 0.2s;
 }
+
+.header_logo:hover {
+  color: #ff4901;
+}
+
 .header_menu {
   margin: 0px 0px 0px 300px;
 }
@@ -50,10 +56,11 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #000000;
+  transition: 0.2s;
 }
 
-.menu__link:hover {
-  text-decoration: underline;
+.menu_link:hover {
+  color: #ff4901;
 }
 
 .main_container {
@@ -79,14 +86,22 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px #474747;
   padding: 10px 0px;
+  overflow: hidden;
 }
 
 .product_card__img {
   border-radius: 20px;
+  transition: 0.5s;
+}
+
+.product_card__img:hover {
+  transform: scale(1.1);
 }
 
 .product_card__prices {
   background-color: #ffb005;
+  padding-left: 10px;
+
 }
 
 .product_card__old-price {
@@ -101,11 +116,13 @@ body {
 
 .product_card__brand-name {
   font-size: 18px;
+  padding-left: 10px;
 }
 
 .product_card__product-name {
   font-size: 18px;
   font-style: italic;
+  padding-left: 10px;
 }
 
 .product_card__button {
@@ -150,4 +167,9 @@ body {
 .github_link {
   text-decoration: none;
   color: #000000;
+  transition: 0.2s;
+}
+
+.github_link:hover {
+  color: #ff4901;
 }
