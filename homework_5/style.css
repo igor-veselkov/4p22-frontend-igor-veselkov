@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-regular.svg#MontserratAlternates') format('svg'); /* Legacy iOS */
+}
+/* montserrat-alternates-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-alternates-v17-latin_cyrillic-700.svg#MontserratAlternates') format('svg'); /* Legacy iOS */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,8 +41,9 @@ li {
 }
 
 body {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 18px;
+  font-family: 'Montserrat Alternates';
+  font-size: 24px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -61,7 +88,6 @@ body {
 }
 
  .section {
-  width: 800px;
   margin: 20px;
   position: relative;
   left: 320px;
@@ -86,7 +112,7 @@ body {
 .up {
   position: fixed;
   bottom: 45px;
-  right: 45px;
+  left: 45px;
   text-decoration: none;
   color: #142a4b;
   transition: 0.2s;
