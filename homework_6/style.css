@@ -19,6 +19,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,6 +32,7 @@ li {
 }
 
 body {
+  min-width: 700px;
   width: 100%;
   font-family: 'Montserrat Alternates';
   font-size: 1.3em;
