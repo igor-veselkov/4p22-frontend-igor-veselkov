@@ -19,7 +19,6 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 a {
@@ -32,21 +31,21 @@ li {
 }
 
 body {
-  min-width: 700px;
-  width: 100%;
+  max-width: 2560px;
+  min-width: 800px;
   font-family: 'Montserrat Alternates';
-  font-size: 1.3em;
+  font-size: 24px;
   overflow-x: hidden;
 }
 
 .header {
-  max-width: 100%;
-  min-width: 700px;
+
   background-color: #428eff;
 }
 
 .header-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -81,8 +80,6 @@ body {
 }
 
  .section {
-  max-width: 100%;
-  min-width: 700px;
   margin-top: 20px;
   padding-right: 320px;
   position: relative;
