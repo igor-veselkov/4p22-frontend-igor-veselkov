@@ -31,15 +31,12 @@ li {
 }
 
 body {
-  max-width: 2560px;
-  min-width: 800px;
   font-family: 'Montserrat Alternates';
-  font-size: 24px;
-  overflow-x: hidden;
+  font-size: calc(24 / 1440 * 100vw);
 }
 
 .header {
-
+  width: 100%;
   background-color: #428eff;
 }
 
@@ -49,24 +46,25 @@ body {
 }
 
 .header-logo {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: calc(80 / 1440 * 100vw);
+  max-height: calc(80 / 1440 * 100vw);
 }
 
 .header-title {
-  padding-top: 20px;
+  padding-top: calc(20 / 1440 * 100vw);
 }
 
 .main-sidebar {
-  border-right: 3px solid #142a4b;
-  padding: 10px;
-  max-width: 280px;
+  border-right: calc(3 / 1440 * 100vw) solid #142a4b;
+  padding: calc(10 / 1440 * 100vw);
+  max-width: calc(280 / 1440 * 100vw);
   position: absolute;
+  width: 30%;
  }
 
 .main-sidebar__title{
   color: #428eff;
-  padding-bottom: 30px;
+  padding-bottom: calc(30 / 1440 * 100vw);
 }
 
 .main-sidebar__link {
@@ -80,31 +78,31 @@ body {
 }
 
  .section {
-  margin-top: 20px;
-  padding-right: 320px;
+  margin-top: calc(20 / 1440 * 100vw);
   position: relative;
-  left: 320px;
+  left: calc(320 / 1440 * 100vw);
+  width: 70%;
 }
 
 .section-title {
   position: sticky;
   top: 0;
   background-color: #428eff;
-  padding: 10px;
+  padding: calc(10 / 1440 * 100vw);
 }
 
 .section-content {
-  text-indent: 20px;
+  text-indent: calc(20 / 1440 * 100vw);
 }
 
 .section-content__list {
-  padding-top: 20px;
+  padding-top: calc(20 / 1440 * 100vw);
 }
 
 .up {
   position: fixed;
-  bottom: 45px;
-  left: 45px;
+  bottom: calc(45 / 1440 * 100vw);
+  left: calc(45 / 1440 * 100vw);
   text-decoration: none;
   color: #142a4b;
   transition: 0.2s;
