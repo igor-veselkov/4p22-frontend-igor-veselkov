@@ -119,6 +119,9 @@
   cursor: pointer;
   align-self: center;
   font-size: calc(24 / 1440 * 100vw);
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: calc(16 / 1440 * 100vw);
   color: #ffffff;
   transition: 0.3s;
 }
@@ -173,7 +176,7 @@
   .login-card__label-email {
     margin: 0 0 calc(1 / 768 * 100vw) calc(8 / 768 * 100vw);
     font-size: calc(16 / 768 * 100vw);
-    color: rgba(120, 120, 120, 1);
+    color: #787878;
   }
   .login-card__input-email {
     height: calc(49 / 768 * 100vw);
