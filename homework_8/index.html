@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Simple Calc</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="calc">
+            <h1 class="calc__title">Калькулятор</h1>
+            <div class="calc__number">
+                <input class="calc__number-input" id="number1" placeholder="Введите число" type="text" name="number1">
+            </div>
+            <div class="calc__operator">
+                <input class="calc__operator-input" id="operator" placeholder="(+, -, /, *)" type="text" name="operator">
+            </div>
+            <div class="calc__number">
+                <input class="calc__number-input" id="number2" placeholder="Введите число" type="text" name="number2">
+            </div>
+            <button class="calc__button" type="submit" id="submit">Результат</button>
+            <div class="calc__result" id="result"></div>
+        </form>
+        <script src="/script.js"></script>
+    </div>
+</body>
+</html>

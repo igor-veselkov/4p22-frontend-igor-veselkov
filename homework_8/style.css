@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  color: #333333;
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  border: 4px solid #333333;
+  border-radius: 20px;
+  background-color: #38aa6b;
+  padding: 20px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(255, 255, 255, 1);
+  opacity: 0;
+  transition: 2s;
+  animation: block 3s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes block {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.calc__title {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.calc__number {
+  padding-bottom: 10px;
+}
+
+.calc__number-input {
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 100%;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  background-color: #b6fac7;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  padding-left: 5px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #333333;
+  opacity: 0.5;
+}
+
+.calc__operator {
+  padding-bottom: 10px;
+}
+
+.calc__operator-input {
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 100%;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  background-color: #b6fac7;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  padding-left: 5px;
+  outline: none;
+}
+
+.calc__button {
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  color: #333333;
+  background-color: #b6fac7;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calc__button:hover {
+  background-color: #333333;
+  color: #b6fac7;;
+}
+
+.calc__result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  background-color: #333333;
+  color: #fffefe;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
