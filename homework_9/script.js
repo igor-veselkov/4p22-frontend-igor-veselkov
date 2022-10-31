@@ -1,16 +1,23 @@
 "use strict";
 
-function fibonacci(num) {
+function makeFibonacciFunction() {
     let a = 1;
     let b = 1;
 
-    for (let i = 3; i <= num; i++) {
-        let c = a + b;
+    function result() {
+        let c;
+        c = a;
         a = b;
-        b = c;
+        b = b + c;
+        return c;
     }
-    return b;
+    return result;
 }
 
-fibonacci();
-console.log(fibonacci(10));
+const fibonacci = makeFibonacciFunction();
+
+console.log(fibonacci()); // Вывод в консоль: 1
+console.log(fibonacci()); // Вывод в консоль: 1
+console.log(fibonacci()); // Вывод в консоль: 2
+console.log(fibonacci()); // Вывод в консоль: 3
+console.log(fibonacci()); // Вывод в консоль: 5
