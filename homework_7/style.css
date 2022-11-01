@@ -13,6 +13,13 @@ body {
     font-weight: 700;
     background: #1B2473;
     color: #787878;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
 }
 
 .wrapper {
